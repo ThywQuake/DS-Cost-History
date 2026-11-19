@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "DeepSeek 消费记录导出",
+    "description": "导出 DeepSeek 开放平台的消费记录：先向用户索取 platform.deepseek.com 的 HAR 文件和 Bearer token，验证登录态后按用户指定的时间范围分批下载，并生成按钱包拆分的 CSV/Excel 费用明细——Paid（充值余额）与 Granted（赠金）分开，同时给出模型、API Key、token 类别维度。token 存为 DSH 凭据记录，只回显掩码。如果 HAR 里没有 Authorization，会教用户从导出请求的请求头或 userToken Cookie 里取 token。",
+    "detail": "docs/DETAIL.md"
+  }
+}

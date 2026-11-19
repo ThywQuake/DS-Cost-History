@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "DeepSeek usage export",
+    "description": "Exports DeepSeek platform consumption records. It first asks for a HAR file from platform.deepseek.com and a Bearer token, validates the login state, then downloads the date range the user chooses and writes CSV/Excel tables split by wallet: Paid (top-up balance) and Granted (bonus credit), with model, API key, and token-type breakdown. The token is stored as a DSH credential record and never echoed; the detail tables exclude Granted rows when Paid is selected. It teaches the user to click the page's export button first so the HAR contains the /usage/export request, and to read the token from that request's Authorization header or the userToken cookie when the HAR has none.",
+    "detail": "docs/DETAIL.md"
+  }
+}
